@@ -13,8 +13,9 @@ public class Tree implements Item {
     }
 
 
-    public void draw(GraphicsContext gr) {
+    public  void draw(GraphicsContext gr) {
         //System.out.println("Рисую дерево");
+//дерево 1
 
        gr.setFill(Color.GREEN);
         //gr.setLineWidth(10);
@@ -25,6 +26,18 @@ public class Tree implements Item {
         gr.setFill(Color.BROWN);
         gr.fillPolygon(new double[]{290,310,310,290},
                 new double[]{150,150,160,160},4
+        );
+
+//дерево 2
+        gr.setFill(Color.GREEN);
+        //gr.setLineWidth(10);
+
+        gr.fillPolygon(new double[]{260, 290,230},
+                new double[]{100,200,200},3
+        );
+        gr.setFill(Color.BROWN);
+        gr.fillPolygon(new double[]{250,270,270,250},
+                new double[]{200,200,210,210},4
         );
 
     }

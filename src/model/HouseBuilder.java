@@ -8,5 +8,6 @@ public interface HouseBuilder {
     void buildWalls();
     void buildRoof();
     void buildTree();
+    void buildOpening();
     House getHouse();
 }

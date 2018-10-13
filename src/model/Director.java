@@ -10,6 +10,7 @@ public class Director {
         builder.buildWalls();
         builder.buildRoof();// можно без
         builder.buildTree();
+        builder.buildOpening();
         return builder.getHouse();
     }
 }

@@ -13,8 +13,7 @@ public class SimpleHouseBuilder implements HouseBuilder {
         this.house.setBasement(new Basement());
     }
     public void buildWalls() {
-        for (int i = 0; i < 4; i++)
-            this.house.addWall(new Wall());
+            this.house.setWalls(new Wall());
     }
     public void buildRoof() {
         this.house.setRoof(new Roof());
@@ -22,6 +21,7 @@ public class SimpleHouseBuilder implements HouseBuilder {
     public void buildTree(){
         this.house.setTree(new Tree());
     }
+    public void buildOpening(){this.house.setOpening(new Opening());}
     public House getHouse() {
         return this.house;
     }
